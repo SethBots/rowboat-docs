@@ -4,9 +4,9 @@
 
 ```
 web:
-  80351110224678912: admin #b1nzy
+  80351110224678912: admin #dejay
   108598213681922048: editor #wolfiri
-  232921983317180416: viewer #rowboat
+  232921983317180416: viewer #speedboat
 ```
 
 Web determines which users are able to view the configuration dashboard for the server. Commenting a line with the Username above each ID helps with organization.
@@ -16,7 +16,7 @@ User ID is used to assign ranks. There are three ranks you can assign: admin, ed
 ### Nickname
 
 ```
-nickname: R0WB0AT
+nickname: SP33DB0AT
 ```
 
 Set a nickname for the bot! Nickname is applied upon reload of the bot.
