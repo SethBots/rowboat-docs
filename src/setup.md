@@ -69,6 +69,7 @@ plugins:
     levels:
       0:
         filter_invites: true
+        filter_domains: false
         invites_whitelist: ['discord-developers', 'discord-testers', 'discord-api', 'events', 'discord-linux', 'gamenight', 'discord-feedback']
         blocked_words: ['word1', 'word2', 'word3']
 ```

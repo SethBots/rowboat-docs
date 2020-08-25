@@ -52,6 +52,13 @@ The admin plugin provides a set of administrator commands that help in moderatin
 
 ```
   admin:
+    confirm_actions: false
+    mute_role: 289494296703533058
+    temp_mute_role: 274638000820846592
+    group_roles:
+      PC: 278810978722906112
+      Console: 278972377587515392
+      Tabletop: 278972423502561280	
     persist:
       roles: true
       role_ids: [278810978722906112, 278972423502561280, 278972377587515392]
@@ -60,9 +67,5 @@ The admin plugin provides a set of administrator commands that help in moderatin
     role_aliases:
       role1: 205769314199011329
       role2: 333806119199703042
-    group_roles:
-      PC: 278810978722906112
-      Console: 278972377587515392
-      Tabletop: 278972423502561280
     locked_roles: [346471724126044160, 252184905075654657]
 ```
