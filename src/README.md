@@ -1,6 +1,6 @@
 # Speedboat
 
-Speedboat is a utilitarian and administration assistant for Discord. It's a bot that was built to be highly configurable, and allow server admins to modify functionality based on the requirements of individual servers. The freely hosted version of Speedboat is private, and only added on high-traffic servers. Speedboat is [open-source](https://github.com/b1naryth1ef/Speedboat).
+Speedboat is a modernized fork of rowboat, a moderation and utilitarian bot built for large Discord servers. It's a bot that was built to be highly configurable, and allow server admins to modify functionality based on the requirements of individual servers. The freely hosted version of Speedboat is private and [you must reach out to be approved.](https://discord.gg/qT7qGq6) Approval can be given especially to high-traffic servers. Speedboat is [open-source](https://github.com/SethBots/speedboat).
 
 ## Use Cases
 
