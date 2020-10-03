@@ -18,21 +18,7 @@ By turning on Speedboat's spam prevention, r/Overwatch takes a huge burden off m
 
 ## User Testimonials
 
-### Looney - Events and Community for Discord
-
-> Speedboat has allowed us to efficiently scale the moderation teams of our large public and private community servers, without placing extra burden on our volunteer moderators or sacrificing auditability.
-
-### PapaSmurf - Community Moderator, Server Owner and Discord Partner
-
-> Speedboat has helped me manage the multiple servers I run with quick and easy access to logging information.
-
-### Tachyon - Community Moderator and Discord Hypesquad Member
-
-> Speedboat allows for easy logging and server administration and moderation; it plays an important role in any discord community and is one of the most responsive bots out there.
-
-### Wolfiri - Community Moderator, Server Owner and Discord Partner
-
-> Before Speedboat came along, I was stuck using poorly built and inadequate bots with confusing in-client configurations or limited dashboard options. Now with Speedboat, I'm able to easily customize every option and plugin, giving me only the features I want and exactly how I want them. The level of customization is unmatched by any other bot. My moderation team now has the tools at their disposal to handle anything thrown at them without needing extensive training to use these tools. I also no longer have to worry about missing anything with the comprehensive moderation log feature. Every change is tracked from nicknames to deleted messages. Not only does Speedboat have the best moderation tools, the utility commands are also heavily used on my servers. We have reminders, multi-jumbo emoji, and random cats! Every feature on Speedboat is well thought out and built with the user's experience in mind. Speedboat is an exceptional bot and has truly enhanced my experience on Discord -- I can't imagine moderating a server without it!
+### Removed
 
 ## Plugins
 
