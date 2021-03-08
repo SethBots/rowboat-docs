@@ -1,0 +1,294 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Modlog - Speedboat Docs</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Documentation for Speedboat, with all this power comes all this configuration.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="chapter-item expanded "><a href="../setup.html"><strong aria-hidden="true">1.</strong> Setting Up Speedboat</a></li><li class="chapter-item expanded "><a href="../general.html"><strong aria-hidden="true">2.</strong> General Configuration</a></li><li class="chapter-item expanded "><a href="../moderator.html"><strong aria-hidden="true">3.</strong> Moderator Command Reference</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Plugins</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../plugins/utility.html"><strong aria-hidden="true">4.1.</strong> Utility</a></li><li class="chapter-item expanded "><a href="../plugins/admin.html"><strong aria-hidden="true">4.2.</strong> Admin</a></li><li class="chapter-item expanded "><a href="../plugins/infractions.html"><strong aria-hidden="true">4.3.</strong> Infractions</a></li><li class="chapter-item expanded "><a href="../plugins/censor.html"><strong aria-hidden="true">4.4.</strong> Censor</a></li><li class="chapter-item expanded "><a href="../plugins/spam.html"><strong aria-hidden="true">4.5.</strong> Spam</a></li><li class="chapter-item expanded "><a href="../plugins/modlog.html" class="active"><strong aria-hidden="true">4.6.</strong> Modlog</a></li><li class="chapter-item expanded "><a href="../plugins/starboard.html"><strong aria-hidden="true">4.7.</strong> Starboard</a></li><li class="chapter-item expanded "><a href="../plugins/reddit.html"><strong aria-hidden="true">4.8.</strong> Reddit</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Speedboat Docs</h1>
+
+                    <div class="right-buttons">
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="modlog-plugin"><a class="header" href="#modlog-plugin">ModLog Plugin</a></h1>
+<p>The modlog plugin provides a mechanisim for logging various events and actions to one or more channels. The intention of the modlog is to provide a private feed of server events that administrators and moderators can use to better monitor and audit users actions. The modlog is extremely configurable, and thus fairly complex.</p>
+<h2 id="commands"><a class="header" href="#commands">Commands</a></h2>
+<table><thead><tr><th>Name</th><th>Description</th><th>Default Level</th><th>Usage</th></tr></thead><tbody>
+<tr><td><code>!modlog hush</code></td><td>Disables tracking of message deletes in modlog</td><td>Administrator</td><td><code>!modlog hush</code></td></tr>
+<tr><td><code>!modlog unhush</code></td><td>Re-enables tracking of message deletes</td><td>Administrator</td><td><code>!modlog unhush</code></td></tr>
+</tbody></table>
+<h2 id="configuration-options"><a class="header" href="#configuration-options">Configuration Options</a></h2>
+<table><thead><tr><th>Option</th><th>Description</th><th>Type</th><th>Default</th></tr></thead><tbody>
+<tr><td>ignored_users</td><td>A list of user ids which are ignored in the modlog. This is useful for ignoring bots that regularly delete or edit their messages</td><td>list</td><td>empty</td></tr>
+<tr><td>ignored_channels</td><td>A list of channel ids which are ignored in the modlog. This is useful for ignoring private or high-activity channels</td><td>list</td><td>empty</td></tr>
+<tr><td>new_member_threshold</td><td>The number of seconds an account is considered new</td><td>int</td><td>900 (15 minutes)</td></tr>
+<tr><td>channels</td><td>Mapping of channel names/ids to ModLog Configurations</td><td>dict</td><td>empty</td></tr>
+</tbody></table>
+<h3 id="modlog-configuration"><a class="header" href="#modlog-configuration">ModLog Configuration</a></h3>
+<table><thead><tr><th>Option</th><th>Description</th><th>Type</th><th>Default</th></tr></thead><tbody>
+<tr><td>include</td><td>List of modlog actions to include. If empty this includes all mod log actions</td><td>list</td><td>empty</td></tr>
+<tr><td>exclude</td><td>List of modlog actions to exclude. If empty this excludes no mod log actions</td><td>list</td><td>empty</td></tr>
+<tr><td>timestamps</td><td>Whether to render timestamps along with loglines</td><td>bool</td><td>false</td></tr>
+<tr><td>timezone</td><td>The timezone that timestamps are rendered in. Supported timezones: (https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568)</td><td>timezone</td><td>US/Eastern</td></tr>
+</tbody></table>
+<h2 id="actions"><a class="header" href="#actions">Actions</a></h2>
+<table><thead><tr><th>Action</th><th>Description</th></tr></thead><tbody>
+<tr><td>CHANNEL_CREATE</td><td>A channel is created</td></tr>
+<tr><td>CHANNEL_DELETE</td><td>A channel is deleted</td></tr>
+<tr><td>GUILD_MEMBER_ADD</td><td>A member joins</td></tr>
+<tr><td>GUILD_MEMBER_REMOVE</td><td>A member leaves (or gets kicked)</td></tr>
+<tr><td>GUILD_ROLE_CREATE</td><td>A role is created</td></tr>
+<tr><td>GUILD_ROLE_DELETE</td><td>A role is deleted</td></tr>
+<tr><td>GUILD_BAN_ADD</td><td>A ban is added</td></tr>
+<tr><td>MEMBER_ROLE_ADD</td><td>A role is added to a member</td></tr>
+<tr><td>MEMBER_ROLE_RMV</td><td>A role is removed from a member</td></tr>
+<tr><td>MEMBER_TEMP_MUTED</td><td>A tempmute is added</td></tr>
+<tr><td>MEMBER_MUTED</td><td>A mute is added</td></tr>
+<tr><td>MEMBER_UNMUTED</td><td>A mute is removed</td></tr>
+<tr><td>MEMBER_KICK</td><td>A member is kicked</td></tr>
+<tr><td>MEMBER_BAN</td><td>A ban (with a reason) is added</td></tr>
+<tr><td>MEMBER_SOFTBAN</td><td>A softban is added</td></tr>
+<tr><td>MEMBER_TEMPBAN</td><td>A tempban is added</td></tr>
+<tr><td>MEMBER_WARNED</td><td>A warning is added</td></tr>
+<tr><td>MEMBER_RESTORE</td><td>A user rejoined and had their roles/nickname/etc restored</td></tr>
+<tr><td>ADD_NICK</td><td>A user adds a nickname</td></tr>
+<tr><td>RMV_NICK</td><td>A user removes a nickname</td></tr>
+<tr><td>CHANGE_NICK</td><td>A user changes their nickname</td></tr>
+<tr><td>CHANGE_USERNAME</td><td>A user changes their username</td></tr>
+<tr><td>MESSAGE_EDIT</td><td>A message is edited</td></tr>
+<tr><td>MESSAGE_DELETE</td><td>A message is deleted</td></tr>
+<tr><td>MESSAGE_DELETE_BULK</td><td>Multiple messages are deleted</td></tr>
+<tr><td>VOICE_CHANNEL_JOIN</td><td>A user joins a voice channel</td></tr>
+<tr><td>VOICE_CHANNEL_LEAVE</td><td>A user leaves a voice channel</td></tr>
+<tr><td>VOICE_CHANNEL_MOVE</td><td>A user moves voice channels</td></tr>
+<tr><td>COMMAND_USED</td><td>A user uses a rowboat command</td></tr>
+<tr><td>SPAM</td><td>A user triggered spam protection</td></tr>
+<tr><td>CENSORED</td><td>A user posted a message that was censored by the bot</td></tr>
+</tbody></table>
+<h2 id="configuration-example"><a class="header" href="#configuration-example">Configuration Example</a></h2>
+<pre><code class="language-yml">  modlog:
+    channels:
+      289494042000228352:
+        timestamps: true
+        timezone: Etc/GMT-8
+        exclude: []
+        include: []
+    ignored_users: [202217402635780096]
+    new_member_threshold: 86400
+</code></pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../plugins/spam.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../plugins/starboard.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../plugins/spam.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../plugins/starboard.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
