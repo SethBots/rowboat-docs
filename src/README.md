@@ -10,7 +10,7 @@ With over 30,000 members, the bbno$ Discord is one of hip-hops and most complica
 
 #### Multiple Mod Logs
 
-By using Speedboat's support for multiple mod logs, r/Overwatch's admins are able to split and categorize logs into various channels, reducing noise without sacrificing logging.
+By using Speedboat's support for multiple mod logs, bbno$'s admins are able to split and categorize logs into various channels, reducing noise without sacrificing logging.
 
 #### Spam Prevention
 
