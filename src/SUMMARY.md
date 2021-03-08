@@ -2,7 +2,7 @@
 
 [Introduction](README.md)
 
-* [Setting Up Rowboat](setup.md)
+* [Setting Up Speedboat](setup.md)
 * [General Configuration](general.md)
 * [Moderator Command Reference](moderator.md)
 * [Plugins]()

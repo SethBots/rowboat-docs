@@ -1,0 +1,12 @@
+[book]
+title = "Speedboat Docs"
+authors = ["DeJayDev", "b1naryth1ef", "Wolfiri"]
+description = "Documentation for Speedboat, with all this power comes all this configuration."
+language = "en"
+
+[output.html]
+preferred-default-theme = "ayu"
+site-url = "docs.speedboat.dejay.dev"
+
+[output.html.print]
+enable = false

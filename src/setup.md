@@ -1,20 +1,20 @@
-# Setting Up Rowboat
+# Setting Up Speedboat
 
 ## Adding the Bot
 
-Join https://discord.gg/rowboat and post your request in the #server-requests channel, following the instructions in the channel topic. Minimum requirement is 1K active users. If you are accepted, you will be placed into a introduction channel where further instructions will be given. If your message is deleted, that means your application was denied. You may reapply if there is significant change to your server (more members, different topic, partnership, etc.)
+Message DeJay#1337, or join https://inv.wtf/dejay and post your request with the server ID and optionally an invite to the server in the #discussions channel. Minimum requirements may vary server by server, but any size Minecraft Community may get the bot on request. When accepted, you will be messaged with further instructions will be given. If declined, you may reapply if there is significant change to your server (more members, different topic, partnership, etc.)
 
 ## How to Set Up
 
-Once rowboat has been added to your server, go to https://dashboard.rowboat.party/ to edit your server's configuration. Use the sidebar to read about each plugin, then use the example below along with the information in the sidebar to set up your own customized rowboat configuration.
+Once Speedboat has been added to your server, go to https://speedboat.dejay.dev/ to edit your server's configuration. Use the sidebar to read about each plugin, then use the example below along with the information in the sidebar to set up your own customized Speedboat installation.
 
-Below is a blank configuration example with web, utilities, admin, infractions, modlog, spam, and censor set up. While you can simply copy-paste this to your own server's configuration and fill in the blanks to have a perfectly usable rowboat, it's highly encouraged that you read through the full documentation to understand each component and customize rowboat to your server's needs.
+Below is a blank configuration example with many important plugins already setup. While you can simply copy-paste this to your own server's configuration and fill in the blanks to have a perfectly usable rowboat, it's highly encouraged that you read through the full documentation to understand each component and customize rowboat to your server's needs.
 
-```
+```yml
 web:
-  000000000000000000: admin #Username
-  000000000000000000: editor #Username
-  000000000000000000: viewer #Username
+  000000000000000000: admin  # Username
+  000000000000000000: editor # Username
+  000000000000000000: viewer # Username
 
 commands:
   prefix: '!'
@@ -70,6 +70,6 @@ plugins:
       0:
         filter_invites: true
         filter_domains: false
-        invites_whitelist: ['discord-developers', 'discord-testers', 'discord-api', 'events', 'discord-linux', 'gamenight', 'discord-feedback']
+        invites_whitelist: ['discord-developers', 'discord-testers', 'discord-api', 'discord-linux']
         blocked_words: ['word1', 'word2', 'word3']
 ```

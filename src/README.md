@@ -4,9 +4,9 @@ Speedboat is a modernized fork of rowboat, a moderation and utilitarian bot buil
 
 ## Use Cases
 
-### r/Overwatch
+### bbnomula
 
-With over 50,000 members, r/Overwatch is one of Discord's largest and most complicated servers. Previously the administration team had put together a multitude of custom-written bots with various functionality, but when moving to Speedboat they where able to eliminate these entirely. Speedboat provides r/Overwatch with the level of protection and auditing required to run such a high activity server.
+With over 30,000 members, the bbno$ Discord is one of hip-hops and most complicated servers. Previously the administration team ran on a pletora of public bots with various functionality, but when moved to Speedboat they where able to eliminate these entirely. Speedboat provides bbno$ with the level of protection and auditing required.
 
 #### Multiple Mod Logs
 
@@ -14,7 +14,7 @@ By using Speedboat's support for multiple mod logs, r/Overwatch's admins are abl
 
 #### Spam Prevention
 
-By turning on Speedboat's spam prevention, r/Overwatch takes a huge burden off moderators and ensures the server is safe even when nobody is watching. With the high level of configurability they were able to ensure a level of security which does not impact normal chat, but catches bad actors quickly and efficiently.
+By turning on Speedboat's spam prevention servers take a huge burden off moderators and ensures the server is safe especially when nobody is watching. With the high level of configurability they were able to ensure a level of security which does not impact normal chat, but catches bad actors quickly and efficiently.
 
 ## User Testimonials
 
@@ -30,7 +30,6 @@ By turning on Speedboat's spam prevention, r/Overwatch takes a huge burden off m
   - Granular role management (adding/removing roles)
   - Invite pruning
   - Reactions pruning
-  - Voice logs
 - Censor
   - Zalgo prevention
   - Whitelisting of invites based on vanity url or destination server
@@ -71,5 +70,3 @@ By turning on Speedboat's spam prevention, r/Overwatch takes a huge burden off m
   - Server information
   - User search
   - CAT PHOTOS
-
-

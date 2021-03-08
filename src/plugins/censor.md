@@ -32,14 +32,14 @@ This, combined with the Spam plugin can result in a very robust automatic abuse-
 
 ## Configuration Example
 
-```
+```yml
   censor:
     levels:
       0:
         filter_zalgo: true
         filter_invites: true
         invites_guild_whitelist: [205769246008016897, 272885620769161216]
-        invites_whitelist: ['discord-developers', 'discord-testers', 'discord-api', 'events', 'discord-linux', 'gamenight', 'discord-feedback']
+        invites_whitelist: ['discord-developers', 'discord-testers', 'discord-api', 'discord-linux']
         invites_blacklist: []
         filter_domains: true
         domains_whitelist: []

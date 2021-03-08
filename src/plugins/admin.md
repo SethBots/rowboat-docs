@@ -8,24 +8,24 @@ The admin plugin provides a set of administrator commands that help in moderatin
 |------|-------------|---------------|-------|
 | `!join / add / give {role}` | Assigns a role if it's listed in the group_roles config setting | Default | `!join PC` OR `!add Console` OR `!give Tabletop` |
 | `!leave / remove / take {role}` | Removes a group role from a user | Default | `!leave PC` OR `!remove Console` OR `!take Tabletop` |
-| `!temprole {user} {role ID} {duration} [reason]` | Temporarily applies a role to a user | Moderator | `!temprole 232921983317180416 295646805650046977 7d Trial Mod` OR `!temprole @rowboat#0001 295646805650046977 24h Member of the Day` |
+| `!temprole {user} {role ID} {duration} [reason]` | Temporarily applies a role to a user | Moderator | `!temprole 351776065477279745 295646805650046977 7d Trial Mod` OR `!temprole @Speedboat#9599 295646805650046977 24h Member of the Day` |
 | `!roles` | Returns a list of ids/names for all roles on the server. Useful for configuring other rowboat plugins | Moderator | `!roles` |
-| `!role add {user} {role} [reason]` | Adds a role to a user | Moderator | `!role add 232921983317180416 Moderator Promotion from Member` OR `!role add rowboat#0001 Admin Pretty good Moderator` |
-| `!role remove {user} {role} [reason]` | Removes a role from a user | Moderator | `!role remove 232921983317180416 Administrator Demoted for being bad at job` OR `!role remove rowboat#0001 Mod Terrible moderator` |
+| `!role add {user} {role} [reason]` | Adds a role to a user | Moderator | `!role add 351776065477279745 Moderator Promotion from Member` OR `!role add Speedboat#9599 Admin Pretty good Moderator` |
+| `!role remove {user} {role} [reason]` | Removes a role from a user | Moderator | `!role remove 351776065477279745 Administrator Demoted for being bad at job` OR `!role remove Speedboat#9599 Mod Terrible moderator` |
 | `!role unlock {role ID}` | Unlocks a role listed in the locked_roles config setting for 5 minutes, allowing permission updates | Administrator | `!role unlock 346471724126044160` |
 | `!archive (here / all) [count]` | Archives [count] many messages in the current channel | Moderator | `!archive all 50` OR `!archive here 50` |
-| `!archive user {user} [count]` | Archives [count] many messages that a given user sent in the current guild | Moderator | `!archive user 232921983317180416 100` OR `!archive user @rowboat#0001 100` |
+| `!archive user {user} [count]` | Archives [count] many messages that a given user sent in the current guild | Moderator | `!archive user 351776065477279745 100` OR `!archive user @Speedboat#9599 100` |
 | `!archive channel {channel} [count]` | Archives [count] many messages in the given channel | Moderator | `!archive channel 289482554250100736 20` |
 | `!clean all [count]` | Cleans (deletes) [count] many messages in the current channel | Moderator | `!clean all 20` |
-| `!clean user {user} [count]` | Cleans [count] many messages a given user sent in the current channel | Moderator | `!clean user 232921983317180416 50` |
+| `!clean user {user} [count]` | Cleans [count] many messages a given user sent in the current channel | Moderator | `!clean user 351776065477279745 50` |
 | `!clean bots [count]` | Cleans [count] many messages sent by bots in the current channel | Moderator | `!clean bots 30` |
 | `!clean cancel` | Cancels any cleaning process running in current channel | Moderator | `!clean cancel` |
-| `!reactions clean {user} [count] [emoji]` | Removes the most recent count of reactions from a given user | Moderator | `!reactions clean 232921983317180416` OR `!reactions clean @rowboat#0001 30` OR `!reactions clean 232921983317180416 20 :thinking:` |
-| `!backups restore {user}` | Restores a user to the most recently saved member backup | Moderator | `!backups restore 232921983317180416` OR `!backups restore rowboat#0001` |
-| `!backups clear {user ID}` | Deletes all saved backups for a user | Moderator | `!backups clear 232921983317180416` OR `!backups clear rowboat#0001` |
-| `!stats {user}` | Presents general statistics for a given user | Moderator | `!stats 232921983317180416` OR `!stats rowboat#0001` |
+| `!reactions clean {user} [count] [emoji]` | Removes the most recent count of reactions from a given user | Moderator | `!reactions clean 351776065477279745` OR `!reactions clean @Speedboat#9599 30` OR `!reactions clean 351776065477279745 20 :thinking:` |
+| `!backups restore {user}` | Restores a user to the most recently saved member backup | Moderator | `!backups restore 351776065477279745` OR `!backups restore Speedboat#9599` |
+| `!backups clear {user ID}` | Deletes all saved backups for a user | Moderator | `!backups clear 351776065477279745` OR `!backups clear Speedboat#9599` |
+| `!stats {user}` | Presents general statistics for a given user | Moderator | `!stats 351776065477279745` OR `!stats Speedboat#9599` |
 | `!emojistats (global / server) most` | Displays the most / least used server emojis in the current guild / globally | Moderator | `!emojistats global most` OR `!emojistats server least` |
-| `!voice log {user}` | Displays a list of a given user's recent voice channel activity | Moderator | `!voice log 232921983317180416` OR `!voice log @rowboat#0001` |
+| `!voice log {user}` | Displays a list of a given user's recent voice channel activity | Moderator | `!voice log 351776065477279745` OR `!voice log @Speedboat#9599` |
 | `!invites prune [uses]` | Deletes server invites with the given number of uses or less. Cleans 1 and 0 use invites if left blank | Administrator | `!invites prune 5` |
 
 
@@ -50,11 +50,10 @@ The admin plugin provides a set of administrator commands that help in moderatin
 
 ## Configuration Example
 
-```
+```yml
   admin:
     confirm_actions: false
     mute_role: 289494296703533058
-    temp_mute_role: 274638000820846592
     group_roles:
       PC: 278810978722906112
       Console: 278972377587515392

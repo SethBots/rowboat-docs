@@ -2,11 +2,11 @@
 
 ### Web
 
-```
+```yml
 web:
   80351110224678912: admin #b1nzy
   108598213681922048: editor #wolfiri
-  232921983317180416: viewer #rowboat
+  351776065477279745: viewer #rowboat
 ```
 
 Web determines which users are able to view the configuration dashboard for the server. Commenting a line with the Username above each ID helps with organization.
@@ -15,7 +15,7 @@ User ID is used to assign ranks. There are three ranks you can assign: admin, ed
 
 ### Nickname
 
-```
+```yml
 nickname: R0WB0AT
 ```
 
@@ -23,7 +23,7 @@ Set a nickname for the bot! Nickname is applied upon reload of the bot.
 
 ### Levels
 
-```
+```yml
 levels:
   290295853124550657: 100 #Admin
   295476842935353345: 50 #Moderator
@@ -38,7 +38,7 @@ Levels can be assigned anywhere from 0 to 100, keeping in mind the default permi
 
 ### Commands and Overrides
 
-```
+```yml
 commands:
   prefix: '!'
   overrides:

@@ -7,9 +7,9 @@ The starboard plugin provides an ongoing board of highlighted messages through c
 | Name | Description | Default Level | Usage |
 |------|-------------|---------------|-------|
 | `!stars show {mid}` | Displays the given starred message | Trusted | `!stars show 320312743842545664` |
-| `!stars stats [user]` | Presents starboard statistics for the whole server or the given user | Moderator | `!stars stats` OR `!stars stats 232921983317180416` |
-| `!stars block {user}` | Prevents the user from starring any messages and prevents their messages from being starred | Moderator | `!stars block @rowboat#0001` OR `!stars block 232921983317180416` |
-| `!stars unblock {user}` | Unblocks a user from the starboard | Moderator | `!stars unblock @rowboat#0001` OR `!stars unblock 232921983317180416` |
+| `!stars stats [user]` | Presents starboard statistics for the whole server or the given user | Moderator | `!stars stats` OR `!stars stats 351776065477279745` |
+| `!stars block {user}` | Prevents the user from starring any messages and prevents their messages from being starred | Moderator | `!stars block @Speedboat#9599` OR `!stars block 351776065477279745` |
+| `!stars unblock {user}` | Unblocks a user from the starboard | Moderator | `!stars unblock @Speedboat#9599` OR `!stars unblock 351776065477279745` |
 | `!stars hide {mid}` | Hides a starred message from the starboard | Moderator | `!stars hide 320312743842545664` |
 | `!stars unhide {mid}` | Unhides a hidden message | Moderator | `!stars unhide 320312743842545664` |
 | `!stars lock` | Prevents any new starred messages from being posted to the starboard | Administrator | `!stars lock` |
@@ -36,7 +36,7 @@ The starboard plugin provides an ongoing board of highlighted messages through c
 
 ## Configuration Example
 
-```
+```yml
   starboard:
     channels:
       301118039326457867:
