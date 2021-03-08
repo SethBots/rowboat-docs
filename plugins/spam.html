@@ -157,7 +157,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="spam-plugin"><a class="header" href="#spam-plugin">Spam Plugin</a></h1>
+                        <h1><a class="header" href="#spam-plugin" id="spam-plugin">Spam Plugin</a></h1>
 <p>The spam plugin allows administrators and moderators to limit spam and enforce punishments on spammers. The plugin can be used to limit mass sending of:</p>
 <ul>
 <li>General Spam</li>
@@ -168,11 +168,11 @@
 <li>Newlines</li>
 <li>Duplicate Messages</li>
 </ul>
-<h2 id="configuration-options"><a class="header" href="#configuration-options">Configuration Options</a></h2>
+<h2><a class="header" href="#configuration-options" id="configuration-options">Configuration Options</a></h2>
 <table><thead><tr><th>Option</th><th>Description</th><th>Type</th><th>Default</th></tr></thead><tbody>
 <tr><td>levels</td><td>A mapping of levels to Spam Configurations. This will match any user with a level that is equal or lower</td><td>dict</td><td>empty</td></tr>
 </tbody></table>
-<h3 id="spam-configuration"><a class="header" href="#spam-configuration">Spam Configuration</a></h3>
+<h3><a class="header" href="#spam-configuration" id="spam-configuration">Spam Configuration</a></h3>
 <table><thead><tr><th>Option</th><th>Description</th><th>Type</th><th>Default</th></tr></thead><tbody>
 <tr><td>punishment</td><td>Sets which action is performed when the spam filter is triggered. Options are: NONE, <code>MUTE</code>, <code>TEMPMUTE</code>, <code>BAN</code>, <code>TEMPBAN</code>, <code>KICK</code></td><td>str</td><td>none</td></tr>
 <tr><td>punishment_duration</td><td>Required for <code>TEMPBAN</code> and <code>TEMPMUTE</code> punishments and determines how many seconds a punishment should last</td><td>int</td><td>300</td></tr>
@@ -189,7 +189,7 @@
 <tr><td>clean_count</td><td>Maximum number of messages to be deleted</td><td>int</td><td>100</td></tr>
 <tr><td>clean_duration</td><td>Maximum duration (in seconds) for which to delete messages</td><td>int</td><td>900</td></tr>
 </tbody></table>
-<h2 id="configuration-example"><a class="header" href="#configuration-example">Configuration Example</a></h2>
+<h2><a class="header" href="#configuration-example" id="configuration-example">Configuration Example</a></h2>
 <pre><code class="language-yml">  spam:
     levels:
       0:
