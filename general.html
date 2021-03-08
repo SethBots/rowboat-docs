@@ -189,10 +189,13 @@
 </code></pre>
 <p>Here, you can change your prefix, which is the symbol which begins each command. For example: !ban, !!ban, $ban, ^ban, rb!ban</p>
 <p>Overrides allow you to customize which levels and roles can use each command, or group of commands.</p>
-<p>&quot;plugin.name&quot; is used for all commands in a plugin (hint: every section that's indented one in beneath the &quot;plugins:&quot; section is a plugin)<br />
-&quot;group&quot; is used for commands which have multiple components. Some examples: clean, archive, role, stars)<br />
-&quot;name&quot; is used for all other commands.<br />
-&quot;out: {level: }}&quot; is used to assign the minimum level required to use the command.</p>
+<ul>
+<li><code>&quot;plugin.name&quot;</code> is used for all commands in a plugin (hint: every section that's indented one in beneath the &quot;plugins:&quot; section is a plugin)</li>
+<li><code>&quot;group&quot;</code> is used for commands which have multiple components. Some examples: clean, archive, role, stars)</li>
+<li><code>&quot;name&quot;</code> is used for all other commands.</li>
+<li><code>&quot;out: {level: }}&quot;</code> is used to assign the minimum level required to use the command.</li>
+<li><code>&quot;out: {disabled: true}}&quot;</code> is used to disable commands</li>
+</ul>
 <p>Taking the configuration above as an example, if you didn't want regular members to use utility commands (such as jumbo, info, and cat), you can set the level of the &quot;utilities&quot; plugin to 10. This means the role must have at least level 10 assigned to use utility commands.</p>
 
                     </main>

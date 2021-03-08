@@ -189,6 +189,7 @@
 <tr><td>group_roles</td><td>Roles which can be joined and left by any user. These roles cannot grant any elevated permissions</td><td>dict</td><td>empty</td></tr>
 <tr><td>locked_roles</td><td>Prevents permission changes from being made to listed roles</td><td>list</td><td>empty</td></tr>
 <tr><td>persist</td><td>Controls the member persistance settings</td><td>dict</td><td>empty</td></tr>
+<tr><td>group_confirm_reactions</td><td>Whether to confirm via reaction when users join a role</td><td>bool</td><td>false</td></tr>
 </tbody></table>
 <h3><a class="header" href="#member-persistance-settings" id="member-persistance-settings">Member Persistance Settings</a></h3>
 <table><thead><tr><th>Option</th><th>Description</th><th>Type</th><th>Default</th></tr></thead><tbody>
@@ -201,6 +202,7 @@
 <pre><code class="language-yml">  admin:
     confirm_actions: false
     mute_role: 289494296703533058
+    group_confirm_reactions: true
     group_roles:
       PC: 278810978722906112
       Console: 278972377587515392

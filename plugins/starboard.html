@@ -183,6 +183,7 @@
 <tr><td>min_stars</td><td>Minimum number of star reactions required before a message is posted to the starboard</td><td>int</td><td>1</td></tr>
 <tr><td>star_color_max</td><td>Sets the &quot;max&quot; star level. Changes shading of rich embed bar color per level and gives the starboard entry a different emoji at max level</td><td>int</td><td>15</td></tr>
 <tr><td>prevent_self_star</td><td>Whether to prevent a user from starring their own message</td><td>bool</td><td>false</td></tr>
+<tr><td>ignored_channels</td><td>Sets which channels to ignore starred messages from</td><td>dict</td><td>empty</td></tr>
 </tbody></table>
 <h2><a class="header" href="#configuration-example" id="configuration-example">Configuration Example</a></h2>
 <pre><code class="language-yml">  starboard:
@@ -192,6 +193,7 @@
         min_stars: 6
         star_color_max: 15
         prevent_self_star: true
+        ignored_channels: []
 </code></pre>
 
                     </main>
