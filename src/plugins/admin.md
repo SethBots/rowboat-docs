@@ -37,6 +37,7 @@ The admin plugin provides a set of administrator commands that help in moderatin
 | group\_roles | Roles which can be joined and left by any user. These roles cannot grant any elevated permissions | dict | empty |
 | locked\_roles | Prevents permission changes from being made to listed roles | list | empty |
 | persist | Controls the member persistance settings | dict | empty |
+| group_confirm_reactions | Whether to confirm via reaction when users join a role | bool | false |
 
 ### Member Persistance Settings
 
@@ -54,6 +55,7 @@ The admin plugin provides a set of administrator commands that help in moderatin
   admin:
     confirm_actions: false
     mute_role: 289494296703533058
+    group_confirm_reactions: true
     group_roles:
       PC: 278810978722906112
       Console: 278972377587515392

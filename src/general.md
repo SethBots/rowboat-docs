@@ -51,9 +51,10 @@ Here, you can change your prefix, which is the symbol which begins each command.
 
 Overrides allow you to customize which levels and roles can use each command, or group of commands.
 
-"plugin.name" is used for all commands in a plugin (hint: every section that's indented one in beneath the "plugins:" section is a plugin)  
-"group" is used for commands which have multiple components. Some examples: clean, archive, role, stars)  
-"name" is used for all other commands.  
-"out: {level: }}" is used to assign the minimum level required to use the command.
+* `"plugin.name"` is used for all commands in a plugin (hint: every section that's indented one in beneath the "plugins:" section is a plugin)  
+* `"group"` is used for commands which have multiple components. Some examples: clean, archive, role, stars)  
+* `"name"` is used for all other commands.  
+* `"out: {level: }}"` is used to assign the minimum level required to use the command.
+* `"out: {disabled: true}}"` is used to disable commands
 
 Taking the configuration above as an example, if you didn't want regular members to use utility commands (such as jumbo, info, and cat), you can set the level of the "utilities" plugin to 10. This means the role must have at least level 10 assigned to use utility commands.
