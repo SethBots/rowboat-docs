@@ -17,7 +17,16 @@ The level plugin provides xp to your users as they speak in chat!
 ## Configuration Options
 | Option  | Description                                                               | Type | Default |
 |---------|---------------------------------------------------------------------------|------|---------|
-| message | Whether to send the level up message in chat                              | bool | true    |
-| chat    | Whether to send the level up message in Direct Messages                   | bool | false   |
+| message | Whether to send the level up message in Direct Messages                   | bool | false   |
+| chat    | Whether to send the level up message in the channel they leveled up in    | bool | true    |
 | roles   | Mapping of levels: role_ids to give users when they reach a certain level | dict | empty   |
 
+## Configuration Example
+```yaml
+level:
+  message: false
+  chat: true
+  roles:
+    5: 786653299268780083
+    10: 791942837461581824
+```
