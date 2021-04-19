@@ -13,3 +13,11 @@ The level plugin provides xp to your users as they speak in chat!
 | `!xp take {user} {amount}`               | Take {amount} XP from the user                                                                                                                                              | Admin         | `!xp take @ZeroMomentum 1234` OR `!xp take 435206857276260353 1234` |
 | `!xp reset {user}`                       | Completely removes a user's XP and sets it to 0                                                                                                                             | Admin         | `!xp reset @ZeroMomentum` OR `!xp reset 435206857276260353`         |
 | `!xp top/leaderboard [places] [offset]`  | Shows the top 10 users of the leaderboard, using [places] instead of 10 if specified. If [offset] is specified, the leaderboard starts from [offset] instead of 1st place.  | Default       | `!xp top`, `!xp top 25 10` (shows the top 10-25)                    |
+
+## Configuration Options
+| Option  | Description                                                               | Type | Default |
+|---------|---------------------------------------------------------------------------|------|---------|
+| message | Whether to send the level up message in chat                              | bool | true    |
+| chat    | Whether to send the level up message in Direct Messages                   | bool | false   |
+| roles   | Mapping of levels: role_ids to give users when they reach a certain level | dict | empty   |
+
