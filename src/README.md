@@ -1,16 +1,19 @@
 # Speedboat
 
-Speedboat is a modernized fork of rowboat, a moderation and utilitarian bot built for large Discord servers. It's a bot that was built to be highly configurable, and allow server admins to modify functionality based on the requirements of individual servers. The freely hosted version of Speedboat is private and [you must reach out to be approved.](https://discord.gg/qT7qGq6) Approval can be given especially to high-traffic servers. Speedboat is [open-source](https://github.com/SethBots/speedboat).
+Speedboat is a modernized fork of rowboat, a moderation and utilitarian bot built for large Discord servers. 
+Speedboat aims to keep the original rowboat look and feel and is constantly gaining new features as moderation on Discord changes. Although other forks of rowboat may provide more functionality they have deviated from the original vision of the bot. Many of these forks are aware of each other and there is by no means any malice between each other.
+
+Speedboat was built to be highly configurable, and allow server admins to modify functionality based on the requirements of individual servers. At this time, the freely hosted version of Speedboat is private and [you must reach out to be approved.](https://discord.gg/qT7qGq6) Approval can be given especially to high-traffic servers. Speedboat is [open-source](https://github.com/DeJayDev/speedboat), but _it is not recommended to run a Speedboat fork_. Reach out to me, let's talk instead.
 
 ## Use Cases
 
 ### bbnomula
 
-With over 30,000 members, the bbno$ Discord is one of hip-hops and most complicated servers. Previously the administration team ran on a pletora of public bots with various functionality, but when moved to Speedboat they where able to eliminate these entirely. Speedboat provides bbno$ with the level of protection and auditing required.
+With over 30,000 members, the bbno$ Discord is one of hip-hops most complicated servers. Previously the administration team ran on a pletora of public bots with various functionality, but after moving to Speedboat they where able to eliminate these entirely. Speedboat provides bbno$ and his team with the level of protection and auditing required for a server of their fantastic scale.
 
 #### Multiple Mod Logs
 
-By using Speedboat's support for multiple mod logs, bbno$'s admins are able to split and categorize logs into various channels, reducing noise without sacrificing logging.
+By using Speedboat's support for multiple mod logs, bbno$'s staff are able to split and categorize logs into various channels, reducing noise without sacrificing logging.
 
 #### Spam Prevention
 
@@ -18,7 +21,7 @@ By turning on Speedboat's spam prevention servers take a huge burden off moderat
 
 ## User Testimonials
 
-### Removed
+### If you are a Speedboat user who wouuld like to provide a testimonial please reach out! :)
 
 ## Plugins
 
@@ -69,4 +72,4 @@ By turning on Speedboat's spam prevention servers take a huge burden off moderat
   - User information, including last seen time
   - Server information
   - User search
-  - CAT PHOTOS
+  - CAT AND DOG PHOTOS!!!
