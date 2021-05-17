@@ -130,6 +130,10 @@
                     <div class="right-buttons">
                         
                         
+                        <a href="https://github.com/DeJayDev/speedboat-docs" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
                     </div>
                 </div>
 
@@ -157,8 +161,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#moderator-command-quick-reference" id="moderator-command-quick-reference">Moderator Command Quick-Reference</a></h1>
-<h2><a class="header" href="#punishments" id="punishments">Punishments</a></h2>
+                        <h1 id="moderator-command-quick-reference"><a class="header" href="#moderator-command-quick-reference">Moderator Command Quick-Reference</a></h1>
+<h2 id="punishments"><a class="header" href="#punishments">Punishments</a></h2>
 <table><thead><tr><th>Name</th><th>Description</th><th>Default Level</th><th>Usage</th></tr></thead><tbody>
 <tr><td><code>!warn {user} [reason]</code></td><td>Adds a warning infraction to a user</td><td>Moderator</td><td><code>!warn 351776065477279745 1st warning, spamming emoji</code> OR <code>!warn @Speedboat#9599 2nd warning, going off-topic</code></td></tr>
 <tr><td><code>!mute {user} [reason]</code></td><td>Mutes a user. This will only work if <code>mute_role</code> is set in the config</td><td>Moderator</td><td><code>!mute 351776065477279745 spamming</code> OR  <code>!tempmute @Speedboat#9599 60m spamming</code></td></tr>
@@ -171,7 +175,7 @@
 <tr><td><code>!softban {user} [reason]</code></td><td>Softbans (bans/unbans) a user and deletes the user's messages sent within the last 7 days</td><td>Moderator</td><td><code>!softban 351776065477279745 spamming</code> OR <code>!softban @Speedboat#9599 spamming</code></td></tr>
 <tr><td><code>!tempban {user} {duration} [reason]</code></td><td>Temporarily bans a user</td><td>Moderator</td><td><code>!tempban 351776065477279745 5h spamming</code> OR <code>!tempban @Speedboat#9599 5h spamming</code></td></tr>
 </tbody></table>
-<h2><a class="header" href="#admin-utilities" id="admin-utilities">Admin Utilities</a></h2>
+<h2 id="admin-utilities"><a class="header" href="#admin-utilities">Admin Utilities</a></h2>
 <table><thead><tr><th>Name</th><th>Description</th><th>Default Level</th><th>Usage</th></tr></thead><tbody>
 <tr><td><code>!clean all [count]</code></td><td>Cleans (deletes) [count] many messages in the current channel</td><td>Moderator</td><td><code>!clean all 20</code></td></tr>
 <tr><td><code>!clean user {user} [count]</code></td><td>Cleans [count] many messages a given user sent in the current channel</td><td>Moderator</td><td><code>!clean user 351776065477279745 50</code></td></tr>
@@ -188,14 +192,14 @@
 <tr><td><code>!r clear</code></td><td>Clears all of the user's reminders</td><td>Default</td><td><code>!r clear</code></td></tr>
 <tr><td><code>!voice log {user}</code></td><td>Displays a list of a given user's recent voice channel activity</td><td>Moderator</td><td><code>!voice log 351776065477279745</code> OR <code>!voice log @Speedboat#9599</code></td></tr>
 </tbody></table>
-<h2><a class="header" href="#infractions" id="infractions">Infractions</a></h2>
+<h2 id="infractions"><a class="header" href="#infractions">Infractions</a></h2>
 <table><thead><tr><th>Name</th><th>Description</th><th>Default Level</th><th>Usage</th></tr></thead><tbody>
 <tr><td><code>!inf search {query}</code></td><td>Searches infractions database for given query</td><td>Moderator</td><td><code>!inf search 351776065477279745</code> OR <code>!inf search Speedboat#9599</code> OR <code>!inf search spamming</code></td></tr>
 <tr><td><code>!inf info {inf#}</code></td><td>Presents information on the given infraction</td><td>Moderator</td><td><code>!inf info 1274</code></td></tr>
 <tr><td><code>!inf duration {inf#} {duration}</code></td><td>Updates the duration of the given infraction. Duration starts from time of initial action</td><td>Moderator</td><td><code>!inf duration 1274 5h</code></td></tr>
 <tr><td><code>!inf reason {inf#} {reason}</code></td><td>Updates the reason of a given infraction</td><td>Moderator</td><td><code>!inf reason 1274 rude behaviour towards staff</code></td></tr>
 </tbody></table>
-<h2><a class="header" href="#starboard" id="starboard">Starboard</a></h2>
+<h2 id="starboard"><a class="header" href="#starboard">Starboard</a></h2>
 <table><thead><tr><th>Name</th><th>Description</th><th>Default Level</th><th>Usage</th></tr></thead><tbody>
 <tr><td><code>!stars block {user}</code></td><td>Prevents the user from starring any messages and prevents their messages from being starred</td><td>Moderator</td><td><code>!stars block @Speedboat#9599</code> OR <code>!stars block 351776065477279745</code></td></tr>
 <tr><td><code>!stars unblock {user}</code></td><td>Unblocks a user from the starboard</td><td>Moderator</td><td><code>!stars unblock @Speedboat#9599</code> OR <code>!stars unblock 351776065477279745</code></td></tr>

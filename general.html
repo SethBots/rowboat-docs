@@ -130,6 +130,10 @@
                     <div class="right-buttons">
                         
                         
+                        <a href="https://github.com/DeJayDev/speedboat-docs" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
                     </div>
                 </div>
 
@@ -157,8 +161,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h2><a class="header" href="#general-configuration" id="general-configuration">General Configuration</a></h2>
-<h3><a class="header" href="#web" id="web">Web</a></h3>
+                        <h2 id="general-configuration"><a class="header" href="#general-configuration">General Configuration</a></h2>
+<h3 id="web"><a class="header" href="#web">Web</a></h3>
 <pre><code class="language-yml">web:
   194861788926443520: admin  # DeJay
   194861788926443520: editor # Also DeJay
@@ -166,11 +170,11 @@
 </code></pre>
 <p>Web determines which users are able to view the configuration dashboard for the server. Commenting a line with the Username above each ID helps with organization.</p>
 <p>User ID is used to assign ranks. There are three ranks you can assign: admin, editor,  viewer. Admin can add more users (including other Admins), edit, and view the dashboard. Editor can edit and view the dashboard. Viewer can only view.</p>
-<h3><a class="header" href="#nickname" id="nickname">Nickname</a></h3>
+<h3 id="nickname"><a class="header" href="#nickname">Nickname</a></h3>
 <pre><code class="language-yml">nickname: SP33DBOAT
 </code></pre>
 <p>Set a nickname for the bot! Nickname is applied upon reload of the bot.</p>
-<h3><a class="header" href="#levels" id="levels">Levels</a></h3>
+<h3 id="levels"><a class="header" href="#levels">Levels</a></h3>
 <pre><code class="language-yml">levels:
   290295853124550657: 100 #Admin
   295476842935353345: 50 #Moderator
@@ -179,7 +183,7 @@
 <p>This is where you assign levels to each role! Remember, the default level is 0 if a user doesn't have one of the listed roles. Users will have the highest level of the roles they're assigned.</p>
 <p>By default, each level has a certain rank associated with it: 0 - Default, 10 - Trusted, 50 - Mod, 100 - Admin. You can view the default rank required for each command by looking at the Commands section for the plugin.</p>
 <p>Levels can be assigned anywhere from 0 to 100, keeping in mind the default permissions given in the Speedboat Docs.</p>
-<h3><a class="header" href="#commands-and-overrides" id="commands-and-overrides">Commands and Overrides</a></h3>
+<h3 id="commands-and-overrides"><a class="header" href="#commands-and-overrides">Commands and Overrides</a></h3>
 <pre><code class="language-yml">commands:
   prefix: '!'
   overrides:

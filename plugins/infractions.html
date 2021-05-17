@@ -130,6 +130,10 @@
                     <div class="right-buttons">
                         
                         
+                        <a href="https://github.com/DeJayDev/speedboat-docs" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
                     </div>
                 </div>
 
@@ -157,9 +161,9 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#infractions-plugin" id="infractions-plugin">Infractions Plugin</a></h1>
+                        <h1 id="infractions-plugin"><a class="header" href="#infractions-plugin">Infractions Plugin</a></h1>
 <p>The infractions plugin provides a set of useful moderator commands. These commands are intended to be used together and help handle/track misbehaving users over time.</p>
-<h2><a class="header" href="#commands" id="commands">Commands</a></h2>
+<h2 id="commands"><a class="header" href="#commands">Commands</a></h2>
 <table><thead><tr><th>Name</th><th>Description</th><th>Default Level</th><th>Usage</th></tr></thead><tbody>
 <tr><td><code>!warn {user} [reason]</code></td><td>Adds a warning infraction to a user</td><td>Moderator</td><td><code>!warn 351776065477279745 1st warning, spamming emoji</code> OR <code>!warn @Speedboat#9599 2nd warning, going off-topic</code></td></tr>
 <tr><td><code>!mute {user} [reason]</code></td><td>Mutes a user. This will only work if <code>mute_role</code> is set in the config</td><td>Moderator</td><td><code>!mute 351776065477279745 spamming</code> OR  <code>!tempmute @Speedboat#9599 60m spamming</code></td></tr>
@@ -179,7 +183,7 @@
 <tr><td><code>!inf duration {inf#} {duration}</code></td><td>Updates the duration of the given infraction. Duration starts from time of initial action</td><td>Moderator</td><td><code>!inf duration 1274 5h</code></td></tr>
 <tr><td><code>!inf reason {inf#} {reason}</code></td><td>Updates the reason of a given infraction</td><td>Moderator</td><td><code>!inf reason 1274 rude behaviour towards staff</code></td></tr>
 </tbody></table>
-<h2><a class="header" href="#configuration-options" id="configuration-options">Configuration Options</a></h2>
+<h2 id="configuration-options"><a class="header" href="#configuration-options">Configuration Options</a></h2>
 <table><thead><tr><th>Option</th><th>Description</th><th>Type</th><th>Default</th></tr></thead><tbody>
 <tr><td>confirm_actions</td><td>Whether to confirm that an action was done in the current channel</td><td>bool</td><td>true</td></tr>
 <tr><td>confirm_actions_reaction</td><td>Whether to confirm actions done in the channel using a checkmark reaction</td><td>bool</td><td>false</td></tr>
@@ -187,7 +191,7 @@
 <tr><td>mute_role</td><td>Role ID that is set for users who are muted</td><td>id</td><td>none</td></tr>
 <tr><td>reason_edit_level</td><td>Minimum level to allow users to edit other users' infraction reasons</td><td>int</td><td>100</td></tr>
 </tbody></table>
-<h2><a class="header" href="#configuration-example" id="configuration-example">Configuration Example</a></h2>
+<h2 id="configuration-example"><a class="header" href="#configuration-example">Configuration Example</a></h2>
 <pre><code class="language-yml">  infractions:
     confirm_actions: false
     mute_role: 289494296703533058

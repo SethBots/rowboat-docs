@@ -130,6 +130,10 @@
                     <div class="right-buttons">
                         
                         
+                        <a href="https://github.com/DeJayDev/speedboat-docs" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
                     </div>
                 </div>
 
@@ -157,9 +161,9 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#admin-plugin" id="admin-plugin">Admin Plugin</a></h1>
+                        <h1 id="admin-plugin"><a class="header" href="#admin-plugin">Admin Plugin</a></h1>
 <p>The admin plugin provides a set of administrator commands that help in moderating active servers.</p>
-<h2><a class="header" href="#commands" id="commands">Commands</a></h2>
+<h2 id="commands"><a class="header" href="#commands">Commands</a></h2>
 <table><thead><tr><th>Name</th><th>Description</th><th>Default Level</th><th>Usage</th></tr></thead><tbody>
 <tr><td><code>!join / add / give {role}</code></td><td>Assigns a role if it's listed in the group_roles config setting</td><td>Default</td><td><code>!join PC</code> OR <code>!add Console</code> OR <code>!give Tabletop</code></td></tr>
 <tr><td><code>!leave / remove / take {role}</code></td><td>Removes a group role from a user</td><td>Default</td><td><code>!leave PC</code> OR <code>!remove Console</code> OR <code>!take Tabletop</code></td></tr>
@@ -183,7 +187,7 @@
 <tr><td><code>!voice log {user}</code></td><td>Displays a list of a given user's recent voice channel activity</td><td>Moderator</td><td><code>!voice log 351776065477279745</code> OR <code>!voice log @Speedboat#9599</code></td></tr>
 <tr><td><code>!invites prune [uses]</code></td><td>Deletes server invites with the given number of uses or less. Cleans 1 and 0 use invites if left blank</td><td>Administrator</td><td><code>!invites prune 5</code></td></tr>
 </tbody></table>
-<h2><a class="header" href="#configuration-options" id="configuration-options">Configuration Options</a></h2>
+<h2 id="configuration-options"><a class="header" href="#configuration-options">Configuration Options</a></h2>
 <table><thead><tr><th>Option</th><th>Description</th><th>Type</th><th>Default</th></tr></thead><tbody>
 <tr><td>role_aliases</td><td>Aliases which can be used in place of role IDs in commands</td><td>dict</td><td>empty</td></tr>
 <tr><td>group_roles</td><td>Roles which can be joined and left by any user. These roles cannot grant any elevated permissions</td><td>dict</td><td>empty</td></tr>
@@ -191,14 +195,14 @@
 <tr><td>persist</td><td>Controls the member persistance settings</td><td>dict</td><td>empty</td></tr>
 <tr><td>group_confirm_reactions</td><td>Whether to confirm via reaction when users join a role</td><td>bool</td><td>false</td></tr>
 </tbody></table>
-<h3><a class="header" href="#member-persistance-settings" id="member-persistance-settings">Member Persistance Settings</a></h3>
+<h3 id="member-persistance-settings"><a class="header" href="#member-persistance-settings">Member Persistance Settings</a></h3>
 <table><thead><tr><th>Option</th><th>Description</th><th>Type</th><th>Default</th></tr></thead><tbody>
 <tr><td>roles</td><td>Whether to recover roles when a user rejoins the server</td><td>bool</td><td>false</td></tr>
 <tr><td>role_ids</td><td>A list of role ids which will be recovered if <code>roles</code> is true. Any other roles will be ignored when a user rejoins the server</td><td>list</td><td>empty</td></tr>
 <tr><td>nickname</td><td>Whether to recover the nickname when a user rejoins the server</td><td>bool</td><td>false</td></tr>
 <tr><td>voice</td><td>Whether to recover mute/deafen settings when a user rejoins the server</td><td>bool</td><td>false</td></tr>
 </tbody></table>
-<h2><a class="header" href="#configuration-example" id="configuration-example">Configuration Example</a></h2>
+<h2 id="configuration-example"><a class="header" href="#configuration-example">Configuration Example</a></h2>
 <pre><code class="language-yml">  admin:
     confirm_actions: false
     mute_role: 289494296703533058

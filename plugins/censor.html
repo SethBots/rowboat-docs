@@ -130,6 +130,10 @@
                     <div class="right-buttons">
                         
                         
+                        <a href="https://github.com/DeJayDev/speedboat-docs" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
                     </div>
                 </div>
 
@@ -157,7 +161,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#censor-plugin" id="censor-plugin">Censor Plugin</a></h1>
+                        <h1 id="censor-plugin"><a class="header" href="#censor-plugin">Censor Plugin</a></h1>
 <p>The censor plugin provides administrators and moderators a simple way to filter certain types of malicious and offensive content, such as:</p>
 <ul>
 <li>Invite Links</li>
@@ -165,12 +169,12 @@
 <li>Inappropriate or Offensive words</li>
 </ul>
 <p>This, combined with the Spam plugin can result in a very robust automatic abuse-prevention system.</p>
-<h2><a class="header" href="#configuration-options" id="configuration-options">Configuration Options</a></h2>
+<h2 id="configuration-options"><a class="header" href="#configuration-options">Configuration Options</a></h2>
 <table><thead><tr><th>Option</th><th>Description</th><th>Type</th><th>Default</th></tr></thead><tbody>
 <tr><td>levels</td><td>A mapping of levels to Censor Configurations. This will match any user with a level that is equal or lower</td><td>dict</td><td>empty</td></tr>
 <tr><td>channels</td><td>A mapping of channels to Censor Configurations</td><td>dict</td><td>empty</td></tr>
 </tbody></table>
-<h3><a class="header" href="#censor-configuration" id="censor-configuration">Censor Configuration</a></h3>
+<h3 id="censor-configuration"><a class="header" href="#censor-configuration">Censor Configuration</a></h3>
 <table><thead><tr><th>Option</th><th>Description</th><th>Type</th><th>Default</th></tr></thead><tbody>
 <tr><td>filter_zalgo</td><td>Whether to filter zalgo text from messages</td><td>bool</td><td>true</td></tr>
 <tr><td>filter_invites</td><td>Whether to filter invite links from messages</td><td>bool</td><td>true</td></tr>
@@ -183,7 +187,7 @@
 <tr><td>blocked_tokens</td><td>A list of tokens (can appear in the middle of words) that are blacklisted</td><td>list</td><td>empty</td></tr>
 <tr><td>blocked_words</td><td>A list of words (must be seperated by a boundary) that are blacklisted</td><td>list</td><td>empty</td></tr>
 </tbody></table>
-<h2><a class="header" href="#configuration-example" id="configuration-example">Configuration Example</a></h2>
+<h2 id="configuration-example"><a class="header" href="#configuration-example">Configuration Example</a></h2>
 <pre><code class="language-yml">  censor:
     levels:
       0:

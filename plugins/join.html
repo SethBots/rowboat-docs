@@ -130,6 +130,10 @@
                     <div class="right-buttons">
                         
                         
+                        <a href="https://github.com/DeJayDev/speedboat-docs" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
                     </div>
                 </div>
 
@@ -157,23 +161,23 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#join-plugin" id="join-plugin">Join plugin</a></h1>
+                        <h1 id="join-plugin"><a class="header" href="#join-plugin">Join plugin</a></h1>
 <p>The join plugin provides configurable options to give your users a role when they join!</p>
 <p>When <code>security</code> is enabled in configuration, Speedboat will wait X minutes before the user gains their role. To view the defaults and learn how to configurate them, continue reading.</p>
-<h2><a class="header" href="#configuration-options" id="configuration-options">Configuration Options</a></h2>
+<h2 id="configuration-options"><a class="header" href="#configuration-options">Configuration Options</a></h2>
 <table><thead><tr><th>Option</th><th>Description</th><th>Type</th><th>Default</th></tr></thead><tbody>
 <tr><td>join_role</td><td>Role ID that is set for users when they meet the critera.</td><td>bool</td><td>none</td></tr>
 <tr><td>security</td><td>Whether the servers security settings influence how long it takes a user to gain their join_role.</td><td>bool</td><td>true</td></tr>
 <tr><td>advanced</td><td>A mapping of verification levels to Advanced Configurations</td><td>dict</td><td>empty</td></tr>
 </tbody></table>
-<h2><a class="header" href="#advanced-configurations" id="advanced-configurations">Advanced Configurations</a></h2>
+<h2 id="advanced-configurations"><a class="header" href="#advanced-configurations">Advanced Configurations</a></h2>
 <table><thead><tr><th>Option</th><th>Description</th><th>Type</th><th>Default</th></tr></thead><tbody>
 <tr><td>low</td><td>Time in minutes until a user gains their join_role for servers with low verification.</td><td>int</td><td>0</td></tr>
 <tr><td>medium</td><td>Time in minutes until a user gains their join_role for servers with medium verification.</td><td>int</td><td>5</td></tr>
 <tr><td>high</td><td>Time in minutes until a user gains their join_role for servers with high verification.</td><td>int</td><td>10</td></tr>
 <tr><td>highest</td><td>Time in minutes until a user gains their join_role for servers with extreme/highest verification.</td><td>int</td><td>30</td></tr>
 </tbody></table>
-<h2><a class="header" href="#configuration-example" id="configuration-example">Configuration Example</a></h2>
+<h2 id="configuration-example"><a class="header" href="#configuration-example">Configuration Example</a></h2>
 <pre><code class="language-yaml">join:
   join_role: 814574906044973087
   security: false

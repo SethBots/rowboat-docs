@@ -130,6 +130,10 @@
                     <div class="right-buttons">
                         
                         
+                        <a href="https://github.com/DeJayDev/speedboat-docs" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
                     </div>
                 </div>
 
@@ -157,28 +161,28 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#modlog-plugin" id="modlog-plugin">ModLog Plugin</a></h1>
+                        <h1 id="modlog-plugin"><a class="header" href="#modlog-plugin">ModLog Plugin</a></h1>
 <p>The modlog plugin provides a mechanisim for logging various events and actions to one or more channels. The intention of the modlog is to provide a private feed of server events that administrators and moderators can use to better monitor and audit users actions. The modlog is extremely configurable, and thus fairly complex.</p>
-<h2><a class="header" href="#commands" id="commands">Commands</a></h2>
+<h2 id="commands"><a class="header" href="#commands">Commands</a></h2>
 <table><thead><tr><th>Name</th><th>Description</th><th>Default Level</th><th>Usage</th></tr></thead><tbody>
 <tr><td><code>!modlog hush</code></td><td>Disables tracking of message deletes in modlog</td><td>Administrator</td><td><code>!modlog hush</code></td></tr>
 <tr><td><code>!modlog unhush</code></td><td>Re-enables tracking of message deletes</td><td>Administrator</td><td><code>!modlog unhush</code></td></tr>
 </tbody></table>
-<h2><a class="header" href="#configuration-options" id="configuration-options">Configuration Options</a></h2>
+<h2 id="configuration-options"><a class="header" href="#configuration-options">Configuration Options</a></h2>
 <table><thead><tr><th>Option</th><th>Description</th><th>Type</th><th>Default</th></tr></thead><tbody>
 <tr><td>ignored_users</td><td>A list of user ids which are ignored in the modlog. This is useful for ignoring bots that regularly delete or edit their messages</td><td>list</td><td>empty</td></tr>
 <tr><td>ignored_channels</td><td>A list of channel ids which are ignored in the modlog. This is useful for ignoring private or high-activity channels</td><td>list</td><td>empty</td></tr>
 <tr><td>new_member_threshold</td><td>The number of seconds an account is considered new</td><td>int</td><td>900 (15 minutes)</td></tr>
 <tr><td>channels</td><td>Mapping of channel names/ids to ModLog Configurations</td><td>dict</td><td>empty</td></tr>
 </tbody></table>
-<h3><a class="header" href="#modlog-configuration" id="modlog-configuration">ModLog Configuration</a></h3>
+<h3 id="modlog-configuration"><a class="header" href="#modlog-configuration">ModLog Configuration</a></h3>
 <table><thead><tr><th>Option</th><th>Description</th><th>Type</th><th>Default</th></tr></thead><tbody>
 <tr><td>include</td><td>List of modlog actions to include. If empty this includes all mod log actions</td><td>list</td><td>empty</td></tr>
 <tr><td>exclude</td><td>List of modlog actions to exclude. If empty this excludes no mod log actions</td><td>list</td><td>empty</td></tr>
 <tr><td>timestamps</td><td>Whether to render timestamps along with loglines</td><td>bool</td><td>false</td></tr>
 <tr><td>timezone</td><td>The timezone that timestamps are rendered in. Supported timezones: (https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568)</td><td>timezone</td><td>US/Eastern</td></tr>
 </tbody></table>
-<h2><a class="header" href="#actions" id="actions">Actions</a></h2>
+<h2 id="actions"><a class="header" href="#actions">Actions</a></h2>
 <table><thead><tr><th>Action</th><th>Description</th></tr></thead><tbody>
 <tr><td>CHANNEL_CREATE</td><td>A channel is created</td></tr>
 <tr><td>CHANNEL_DELETE</td><td>A channel is deleted</td></tr>
@@ -212,7 +216,7 @@
 <tr><td>SPAM</td><td>A user triggered spam protection</td></tr>
 <tr><td>CENSORED</td><td>A user posted a message that was censored by the bot</td></tr>
 </tbody></table>
-<h2><a class="header" href="#configuration-example" id="configuration-example">Configuration Example</a></h2>
+<h2 id="configuration-example"><a class="header" href="#configuration-example">Configuration Example</a></h2>
 <pre><code class="language-yml">  modlog:
     channels:
       289494042000228352:

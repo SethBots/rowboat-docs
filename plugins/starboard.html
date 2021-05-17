@@ -130,6 +130,10 @@
                     <div class="right-buttons">
                         
                         
+                        <a href="https://github.com/DeJayDev/speedboat-docs" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
                     </div>
                 </div>
 
@@ -157,9 +161,9 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#starboard-plugin" id="starboard-plugin">Starboard Plugin</a></h1>
+                        <h1 id="starboard-plugin"><a class="header" href="#starboard-plugin">Starboard Plugin</a></h1>
 <p>The starboard plugin provides an ongoing board of highlighted messages through community voting.</p>
-<h2><a class="header" href="#commands" id="commands">Commands</a></h2>
+<h2 id="commands"><a class="header" href="#commands">Commands</a></h2>
 <table><thead><tr><th>Name</th><th>Description</th><th>Default Level</th><th>Usage</th></tr></thead><tbody>
 <tr><td><code>!stars show {mid}</code></td><td>Displays the given starred message</td><td>Trusted</td><td><code>!stars show 320312743842545664</code></td></tr>
 <tr><td><code>!stars stats [user]</code></td><td>Presents starboard statistics for the whole server or the given user</td><td>Moderator</td><td><code>!stars stats</code> OR <code>!stars stats 351776065477279745</code></td></tr>
@@ -172,11 +176,11 @@
 <tr><td><code>!stars check {mid}</code></td><td>Updates star reaction count on given message</td><td>Administrator</td><td><code>!stars check 320312743842545664</code></td></tr>
 <tr><td><code>!stars update</code></td><td>Updates reaction count for the whole starboard</td><td>Administrator</td><td><code>!stars update</code></td></tr>
 </tbody></table>
-<h2><a class="header" href="#configuration-options" id="configuration-options">Configuration Options</a></h2>
+<h2 id="configuration-options"><a class="header" href="#configuration-options">Configuration Options</a></h2>
 <table><thead><tr><th>Option</th><th>Description</th><th>Type</th><th>Default</th></tr></thead><tbody>
 <tr><td>channels</td><td>A mapping of channels to Starboard Configurations</td><td>dict</td><td>empty</td></tr>
 </tbody></table>
-<h3><a class="header" href="#starboard-configuration" id="starboard-configuration">Starboard Configuration</a></h3>
+<h3 id="starboard-configuration"><a class="header" href="#starboard-configuration">Starboard Configuration</a></h3>
 <table><thead><tr><th>Option</th><th>Description</th><th>Type</th><th>Default</th></tr></thead><tbody>
 <tr><td>channels</td><td>Sets which channel starred messages should be posted to</td><td>dict</td><td>empty</td></tr>
 <tr><td>clear_on_delete</td><td>Whether a starboard entry is deleted if the original message is deleted</td><td>bool</td><td>true</td></tr>
@@ -185,7 +189,7 @@
 <tr><td>prevent_self_star</td><td>Whether to prevent a user from starring their own message</td><td>bool</td><td>false</td></tr>
 <tr><td>ignored_channels</td><td>Sets which channels to ignore starred messages from</td><td>dict</td><td>empty</td></tr>
 </tbody></table>
-<h2><a class="header" href="#configuration-example" id="configuration-example">Configuration Example</a></h2>
+<h2 id="configuration-example"><a class="header" href="#configuration-example">Configuration Example</a></h2>
 <pre><code class="language-yml">  starboard:
     channels:
       301118039326457867:

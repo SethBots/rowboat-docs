@@ -130,6 +130,10 @@
                     <div class="right-buttons">
                         
                         
+                        <a href="https://github.com/DeJayDev/speedboat-docs" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
                     </div>
                 </div>
 
@@ -157,20 +161,20 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#reddit-plugin" id="reddit-plugin">Reddit Plugin</a></h1>
+                        <h1 id="reddit-plugin"><a class="header" href="#reddit-plugin">Reddit Plugin</a></h1>
 <p>The Reddit plugin provides a feed of new posts on specified subreddits.</p>
-<h2><a class="header" href="#configuration-options" id="configuration-options">Configuration Options</a></h2>
+<h2 id="configuration-options"><a class="header" href="#configuration-options">Configuration Options</a></h2>
 <table><thead><tr><th>Option</th><th>Description</th><th>Type</th><th>Default</th></tr></thead><tbody>
 <tr><td>subs</td><td>A mapping of subreddits to Subreddit Configurations</td><td>dict</td><td>empty</td></tr>
 </tbody></table>
-<h3><a class="header" href="#subreddit-configuration" id="subreddit-configuration">Subreddit Configuration</a></h3>
+<h3 id="subreddit-configuration"><a class="header" href="#subreddit-configuration">Subreddit Configuration</a></h3>
 <table><thead><tr><th>Option</th><th>Description</th><th>Type</th><th>Default</th></tr></thead><tbody>
 <tr><td>channel</td><td>Sets which channel the feed should post subreddit threads to</td><td>dict</td><td>empty</td></tr>
 <tr><td>mode</td><td>Format of the entries. Options: PRETTY, PLAIN</td><td>str</td><td>pretty</td></tr>
 <tr><td>nsfw</td><td>Whether to include NSFW posts</td><td>bool</td><td>false</td></tr>
 <tr><td>include_stats</td><td>Whether to include stats for each thread</td><td>bool</td><td>false</td></tr>
 </tbody></table>
-<h2><a class="header" href="#configuration-example" id="configuration-example">Configuration Example</a></h2>
+<h2 id="configuration-example"><a class="header" href="#configuration-example">Configuration Example</a></h2>
 <pre><code class="language-yml">  reddit:
     subs:
       discordapp:
