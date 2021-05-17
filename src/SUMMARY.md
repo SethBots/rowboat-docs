@@ -14,3 +14,5 @@
   * [Modlog](plugins/modlog.md)
   * [Starboard](plugins/starboard.md)
   * [Reddit](plugins/reddit.md)
+  * [Level](plugins/level.md)
+  * [Join](plugins/join.md)
