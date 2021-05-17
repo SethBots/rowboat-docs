@@ -6,7 +6,9 @@ language = "en"
 
 [output.html]
 preferred-default-theme = "ayu"
-site-url = "docs.speedboat.dejay.dev"
+cname = "https://docs.speedboat.dejay.dev"
+git-repository-url = "https://github.com/DeJayDev/speedboat-docs"
+edit-url-template = "https://github.com/DeJayDev/speedboat-docs/edit/main/{path}"
 
 [output.html.print]
 enable = false
