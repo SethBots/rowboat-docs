@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Spam - Speedboat Docs</title>
+        <title>Level - Speedboat Docs</title>
         
         
 
@@ -93,7 +93,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="chapter-item expanded "><a href="../setup.html"><strong aria-hidden="true">1.</strong> Setting Up Speedboat</a></li><li class="chapter-item expanded "><a href="../general.html"><strong aria-hidden="true">2.</strong> General Configuration</a></li><li class="chapter-item expanded "><a href="../moderator.html"><strong aria-hidden="true">3.</strong> Moderator Command Reference</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Plugins</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../plugins/utility.html"><strong aria-hidden="true">4.1.</strong> Utility</a></li><li class="chapter-item expanded "><a href="../plugins/admin.html"><strong aria-hidden="true">4.2.</strong> Admin</a></li><li class="chapter-item expanded "><a href="../plugins/infractions.html"><strong aria-hidden="true">4.3.</strong> Infractions</a></li><li class="chapter-item expanded "><a href="../plugins/censor.html"><strong aria-hidden="true">4.4.</strong> Censor</a></li><li class="chapter-item expanded "><a href="../plugins/spam.html" class="active"><strong aria-hidden="true">4.5.</strong> Spam</a></li><li class="chapter-item expanded "><a href="../plugins/modlog.html"><strong aria-hidden="true">4.6.</strong> Modlog</a></li><li class="chapter-item expanded "><a href="../plugins/starboard.html"><strong aria-hidden="true">4.7.</strong> Starboard</a></li><li class="chapter-item expanded "><a href="../plugins/reddit.html"><strong aria-hidden="true">4.8.</strong> Reddit</a></li><li class="chapter-item expanded "><a href="../plugins/level.html"><strong aria-hidden="true">4.9.</strong> Level</a></li><li class="chapter-item expanded "><a href="../plugins/join.html"><strong aria-hidden="true">4.10.</strong> Join</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="chapter-item expanded "><a href="../setup.html"><strong aria-hidden="true">1.</strong> Setting Up Speedboat</a></li><li class="chapter-item expanded "><a href="../general.html"><strong aria-hidden="true">2.</strong> General Configuration</a></li><li class="chapter-item expanded "><a href="../moderator.html"><strong aria-hidden="true">3.</strong> Moderator Command Reference</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Plugins</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../plugins/utility.html"><strong aria-hidden="true">4.1.</strong> Utility</a></li><li class="chapter-item expanded "><a href="../plugins/admin.html"><strong aria-hidden="true">4.2.</strong> Admin</a></li><li class="chapter-item expanded "><a href="../plugins/infractions.html"><strong aria-hidden="true">4.3.</strong> Infractions</a></li><li class="chapter-item expanded "><a href="../plugins/censor.html"><strong aria-hidden="true">4.4.</strong> Censor</a></li><li class="chapter-item expanded "><a href="../plugins/spam.html"><strong aria-hidden="true">4.5.</strong> Spam</a></li><li class="chapter-item expanded "><a href="../plugins/modlog.html"><strong aria-hidden="true">4.6.</strong> Modlog</a></li><li class="chapter-item expanded "><a href="../plugins/starboard.html"><strong aria-hidden="true">4.7.</strong> Starboard</a></li><li class="chapter-item expanded "><a href="../plugins/reddit.html"><strong aria-hidden="true">4.8.</strong> Reddit</a></li><li class="chapter-item expanded "><a href="../plugins/level.html" class="active"><strong aria-hidden="true">4.9.</strong> Level</a></li><li class="chapter-item expanded "><a href="../plugins/join.html"><strong aria-hidden="true">4.10.</strong> Join</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -157,68 +157,31 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#spam-plugin" id="spam-plugin">Spam Plugin</a></h1>
-<p>The spam plugin allows administrators and moderators to limit spam and enforce punishments on spammers. The plugin can be used to limit mass sending of:</p>
-<ul>
-<li>General Spam</li>
-<li>Mentions</li>
-<li>Links</li>
-<li>Attachments</li>
-<li>Emojis</li>
-<li>Newlines</li>
-<li>Duplicate Messages</li>
-</ul>
+                        <h1><a class="header" href="#level-plugin" id="level-plugin">Level plugin</a></h1>
+<p>The level plugin provides xp to your users as they speak in chat!</p>
+<h2><a class="header" href="#commands" id="commands">Commands</a></h2>
+<table><thead><tr><th>Name</th><th>Description</th><th>Default Level</th><th>Usage</th></tr></thead><tbody>
+<tr><td><code>!xp [user]</code></td><td>Checks your own, or another user's XP and level</td><td>Default</td><td><code>!xp</code> OR <code>!xp @ZeroMomentum</code></td></tr>
+<tr><td><code>!xp block {user}</code></td><td>Blocks a user from gaining XP</td><td>Moderator</td><td><code>!xp block 435206857276260353</code> OR <code>!xp block @ZeroMomentum</code></td></tr>
+<tr><td><code>!xp unblock {user}</code></td><td>Removes a user's XP block</td><td>Moderator</td><td><code>!xp unblock 435206857276260353</code> OR <code>!xp unblock @ZeroMomentum</code></td></tr>
+<tr><td><code>!xp give {user} {amount}</code></td><td>Gives a user {amount} amount of XP</td><td>Admin</td><td><code>!xp give @ZeroMomentum 1234</code> OR <code>!xp give 435206857276260353 1234</code></td></tr>
+<tr><td><code>!xp take {user} {amount}</code></td><td>Take {amount} XP from the user</td><td>Admin</td><td><code>!xp take @ZeroMomentum 1234</code> OR <code>!xp take 435206857276260353 1234</code></td></tr>
+<tr><td><code>!xp reset {user}</code></td><td>Completely removes a user's XP and sets it to 0</td><td>Admin</td><td><code>!xp reset @ZeroMomentum</code> OR <code>!xp reset 435206857276260353</code></td></tr>
+<tr><td><code>!xp top/leaderboard [places] [offset]</code></td><td>Shows the top 10 users of the leaderboard, using [places] instead of 10 if specified. If [offset] is specified, the leaderboard starts from [offset] instead of 1st place.</td><td>Default</td><td><code>!xp top</code>, <code>!xp top 25 10</code> (shows the top 10-25)</td></tr>
+</tbody></table>
 <h2><a class="header" href="#configuration-options" id="configuration-options">Configuration Options</a></h2>
 <table><thead><tr><th>Option</th><th>Description</th><th>Type</th><th>Default</th></tr></thead><tbody>
-<tr><td>levels</td><td>A mapping of levels to Spam Configurations. This will match any user with a level that is equal or lower</td><td>dict</td><td>empty</td></tr>
-</tbody></table>
-<h3><a class="header" href="#spam-configuration" id="spam-configuration">Spam Configuration</a></h3>
-<table><thead><tr><th>Option</th><th>Description</th><th>Type</th><th>Default</th></tr></thead><tbody>
-<tr><td>punishment</td><td>Sets which action is performed when the spam filter is triggered. Options are: NONE, <code>MUTE</code>, <code>TEMPMUTE</code>, <code>BAN</code>, <code>TEMPBAN</code>, <code>KICK</code></td><td>str</td><td>none</td></tr>
-<tr><td>punishment_duration</td><td>Required for <code>TEMPBAN</code> and <code>TEMPMUTE</code> punishments and determines how many seconds a punishment should last</td><td>int</td><td>300</td></tr>
-<tr><td>count</td><td>How many times an action should be performed for it to trigger the filter</td><td>int</td><td>???</td></tr>
-<tr><td>interval</td><td>Time period within which the &quot;count&quot; of actions should be performed to trigger the filter</td><td>int</td><td>???</td></tr>
-<tr><td>max_messages</td><td>Total number of messages that can be sent</td><td>dict</td><td>empty</td></tr>
-<tr><td>max_mentions</td><td>How many user mentions can be sent</td><td>dict</td><td>empty</td></tr>
-<tr><td>max_links</td><td>How many links can be sent</td><td>dict</td><td>empty</td></tr>
-<tr><td>max_attachments</td><td>How many attachments can be sent</td><td>dict</td><td>empty</td></tr>
-<tr><td>max_emojis</td><td>How many emojis can be sent</td><td>dict</td><td>empty</td></tr>
-<tr><td>max_newlines</td><td>How many new lines/line breaks can be sent</td><td>dict</td><td>empty</td></tr>
-<tr><td>max_duplicates</td><td>How many duplicate messages can be sent</td><td>dict</td><td>empty</td></tr>
-<tr><td>clean</td><td>Whether or not the offending messages which triggered spam detection should be deleted</td><td>bool</td><td>false</td></tr>
-<tr><td>clean_count</td><td>Maximum number of messages to be deleted</td><td>int</td><td>100</td></tr>
-<tr><td>clean_duration</td><td>Maximum duration (in seconds) for which to delete messages</td><td>int</td><td>900</td></tr>
+<tr><td>message</td><td>Whether to send the level up message in Direct Messages</td><td>bool</td><td>false</td></tr>
+<tr><td>chat</td><td>Whether to send the level up message in the channel they leveled up in</td><td>bool</td><td>true</td></tr>
+<tr><td>roles</td><td>Mapping of levels: role_ids to give users when they reach a certain level</td><td>dict</td><td>empty</td></tr>
 </tbody></table>
 <h2><a class="header" href="#configuration-example" id="configuration-example">Configuration Example</a></h2>
-<pre><code class="language-yml">  spam:
-    levels:
-      0:
-        punishment: TEMPMUTE
-        punishment_duration: 120
-        clean: true
-        clean_count: 50
-        clean_duration: 500
-        max_messages:
-          count: 10
-          interval: 7
-        max_mentions:
-          count: 8
-          interval: 30
-        max_links:
-          count: 10
-          interval: 60
-        max_attachments:
-          count: 10
-          interval: 60
-        max_emojis:
-          count: 100
-          interval: 120
-        max_newlines:
-          count: 60
-          interval: 120
-        max_duplicates:
-          count: 5
-          interval: 30
+<pre><code class="language-yaml">level:
+  message: false
+  chat: true
+  roles:
+    5: 786653299268780083
+    10: 791942837461581824
 </code></pre>
 
                     </main>
@@ -226,13 +189,13 @@
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="../plugins/censor.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../plugins/reddit.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
                         
-                            <a rel="next" href="../plugins/modlog.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../plugins/join.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -244,13 +207,13 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="../plugins/censor.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../plugins/reddit.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
                 
-                    <a rel="next" href="../plugins/modlog.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../plugins/join.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
