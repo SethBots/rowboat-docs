@@ -8,7 +8,7 @@ Message DeJay#1337, or join https://inv.wtf/dejay and post your request with the
 
 Once Speedboat has been added to your server, go to https://speedboat.dejay.dev/ to edit your server's configuration. Use the sidebar to read about each plugin, then use the example below along with the information in the sidebar to set up your own customized Speedboat installation.
 
-Below is a blank configuration example with many important plugins already setup. While you can simply copy-paste this to your own server's configuration and fill in the blanks to have a perfectly usable rowboat, it's highly encouraged that you read through the full documentation to understand each component and customize rowboat to your server's needs.
+Below is a blank configuration example with many important plugins already setup. While you can simply copy-paste this to your own server's configuration and fill in the blanks to have a perfectly usable Speedboat, it's highly encouraged that you read through the full documentation to understand each component and customize Speedboat to your server's needs.
 
 ```yml
 web:

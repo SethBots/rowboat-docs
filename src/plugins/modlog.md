@@ -59,7 +59,7 @@ The modlog plugin provides a mechanisim for logging various events and actions t
 | VOICE\_CHANNEL\_JOIN | A user joins a voice channel |
 | VOICE\_CHANNEL\_LEAVE | A user leaves a voice channel |
 | VOICE\_CHANNEL\_MOVE | A user moves voice channels |
-| COMMAND\_USED | A user uses a rowboat command |
+| COMMAND\_USED | A user used a Speedboat command |
 | SPAM | A user triggered spam protection |
 | CENSORED | A user posted a message that was censored by the bot |
 

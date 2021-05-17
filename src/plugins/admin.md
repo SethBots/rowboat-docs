@@ -9,7 +9,7 @@ The admin plugin provides a set of administrator commands that help in moderatin
 | `!join / add / give {role}` | Assigns a role if it's listed in the group_roles config setting | Default | `!join PC` OR `!add Console` OR `!give Tabletop` |
 | `!leave / remove / take {role}` | Removes a group role from a user | Default | `!leave PC` OR `!remove Console` OR `!take Tabletop` |
 | `!temprole {user} {role ID} {duration} [reason]` | Temporarily applies a role to a user | Moderator | `!temprole 351776065477279745 295646805650046977 7d Trial Mod` OR `!temprole @Speedboat#9599 295646805650046977 24h Member of the Day` |
-| `!roles` | Returns a list of ids/names for all roles on the server. Useful for configuring other rowboat plugins | Moderator | `!roles` |
+| `!roles` | Returns a list of ids/names for all roles on the server. Useful for configuring other Speedboat plugins | Moderator | `!roles` |
 | `!role add {user} {role} [reason]` | Adds a role to a user | Moderator | `!role add 351776065477279745 Moderator Promotion from Member` OR `!role add Speedboat#9599 Admin Pretty good Moderator` |
 | `!role remove {user} {role} [reason]` | Removes a role from a user | Moderator | `!role remove 351776065477279745 Administrator Demoted for being bad at job` OR `!role remove Speedboat#9599 Mod Terrible moderator` |
 | `!role unlock {role ID}` | Unlocks a role listed in the locked_roles config setting for 5 minutes, allowing permission updates | Administrator | `!role unlock 346471724126044160` |

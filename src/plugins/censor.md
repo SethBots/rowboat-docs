@@ -46,7 +46,7 @@ This, combined with the Spam plugin can result in a very robust automatic abuse-
         domains_blacklist: ['website.net']
         blocked_tokens: ['token1', 'token2']
         blocked_words: ['word1', 'word2', 'word3']
-     channels:
+    channels:
       290923757399310337:
         blocked_words: ['word4']
 ```
