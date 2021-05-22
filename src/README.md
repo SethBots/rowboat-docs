@@ -21,7 +21,7 @@ By turning on Speedboat's spam prevention servers take a huge burden off moderat
 
 ## User Testimonials
 
-### If you are a Speedboat user who wouuld like to provide a testimonial please reach out! :)
+### If you are a Speedboat user who would like to provide a testimonial please reach out! :)
 
 ## Plugins
 
