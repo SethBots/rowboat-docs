@@ -7,7 +7,7 @@ When `security` is enabled in configuration, Speedboat will wait X minutes befor
 ## Configuration Options
 | Option  | Description                                                               | Type | Default |
 |---------|---------------------------------------------------------------------------|------|---------|
-| join_role | Role ID that is set for users when they meet the critera.               | bool | none    |
+| join_role | Role ID that is set for users when they meet the critera.               | id | none    |
 | security  | Whether the servers security settings influence how long it takes a user to gain their join_role.   | bool | true    |
 | advanced  | A mapping of verification levels to Advanced Configurations | dict | empty   |
 
