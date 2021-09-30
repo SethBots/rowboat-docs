@@ -47,7 +47,14 @@ commands:
   - {name: 'mute', out: {level: 40}}
 ```
 
-Here, you can change your prefix, which is the symbol which begins each command. For example: !ban, !!ban, $ban, ^ban, rb!ban
+Here, you can change your prefix, which is the symbol which begins each command. For example: !ban, !ban, $ban, ^ban, rban
+
+You can also define a list of valid prefixes:
+
+```yml
+commands:
+  prefixes: ['!', '?']
+```
 
 Overrides allow you to customize which levels and roles can use each command, or group of commands.
 
