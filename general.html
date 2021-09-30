@@ -191,7 +191,11 @@
   - {group: 'clean', out: {level: 40}}
   - {name: 'mute', out: {level: 40}}
 </code></pre>
-<p>Here, you can change your prefix, which is the symbol which begins each command. For example: !ban, !!ban, $ban, ^ban, rb!ban</p>
+<p>Here, you can change your prefix, which is the symbol which begins each command. For example: !ban, !ban, $ban, ^ban, rban</p>
+<p>You can also define a list of valid prefixes:</p>
+<pre><code class="language-yml">commands:
+  prefixes: ['!', '?']
+</code></pre>
 <p>Overrides allow you to customize which levels and roles can use each command, or group of commands.</p>
 <ul>
 <li><code>&quot;plugin.name&quot;</code> is used for all commands in a plugin (hint: every section that's indented one in beneath the &quot;plugins:&quot; section is a plugin)</li>
