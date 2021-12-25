@@ -72,4 +72,4 @@ By turning on Speedboat's spam prevention servers take a huge burden off moderat
   - User information, including last seen time
   - Server information
   - User search
-  - CAT AND DOG PHOTOS!!!
+  - CAT, DOG, AND OTTER PHOTOS!!!
