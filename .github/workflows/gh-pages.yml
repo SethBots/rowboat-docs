@@ -1,34 +1,40 @@
-name: Deploy to GitHub Pages
+name: "Deploy to Cloudflare Pages"
 
 on:
-  workflow_dispatch: []
+  workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: main
 
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    name: "Build mdBook on GitHub and Deploy on Pages"
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
-      - name: Setup mdBook
+      - name: "Setup mdBook"
         uses: peaceiris/actions-mdbook@v1
         with:
-          mdbook-version: '0.4.7'
+          mdbook-version: "latest"
 
       - run: mdbook build
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         with:
           path: |
-            ~/.cargo/registry
-            ~/.cargo/git
-            target
-          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+            ~/.cargo/bin/
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
+            target/
+          key: ${{ runner.os }}-cargo-${{ hashFiles('book/') }}
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        if: ${{ github.ref == 'refs/heads/main' }}
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./book
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: "c5541e8801de162b20b23687ef90296e"
+          projectName: "speedboat-docs"
+          directory: "./book"
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
